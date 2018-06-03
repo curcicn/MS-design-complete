@@ -473,8 +473,8 @@ padding-top: 10px !important;
 	float: left !important;
 }
 #navbar-collapse-1 > ul > li{
-	padding-left: 65px;
-	padding-right: 65px;
+	padding-left: 65px !important;
+	padding-right: 65px !important;
 }
 body > div > div.col-sm-4.content_right {
     padding-right: 0px;
@@ -589,5 +589,58 @@ padding-top: 10px !important;
 }
 .main-link:after {
 display: none !important;
+}
+.main-link-2:after{
+  display: none !important;
+    top: 5px;
+    padding-left: 30px;
+}
+.footer-desk{
+	display: none !important;
+}
+}
+
+@media (min-width: 767px){
+.footer-mob{
+	display: none !important;
+}
+}
+
+
+.footer-mob{
+	display: block ;
+	text-align: left !important;
+	float: none !important;
+	    font-weight: bold;
+
+}
+
+@media (max-width: 390px){
+.footer-copy{
+	margin-right: 0px !important;
+}
+}
+
+
+@media (max-width: 1024px){
+#navbar-collapse-1 > ul > li{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.nav>li>a{
+	padding: 10px 7px !important;
+}
+}
+
+
+@media (min-width: 768px) and (max-width: 992px){
+.main-link:after {
+    content: url('../images/home/linija.png');
+    position: relative;
+    top: 5px;
+    padding-left: 0px;
+}
+.nav>li>a{
+	padding: 10px 0px !important;
 }
 }
