@@ -467,6 +467,44 @@ padding-top: 10px !important;
 
 /*END OF BOOK ONLINE PAGE*/
 
+/*START OF PORTFOLIO PAGE*/
+.content_portfolio{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.image_portfolio{
+	display: block;
+	margin-top: 15px;
+	cursor: pointer;
+}
+.image_portfolio:hover img{
+	transform: scale(1.1);
+	transition: all 800ms ease-in-out; 
+}
+.text_portfolio{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 0;
+	color: #fff;
+	background-color: rgba(0,0,0, 0.7);
+	padding: 10px;
+	font-size: 14px;
+	text-align: center;
+	transition: all 400ms linear;
+}
+.text_portfolio a{
+	color: #fff;
+}
+.image_portfolio:hover .text_portfolio{
+	width: 100%;
+	top: 50%;
+}
+/*END OF PORTFOLIO PAGE*/
+
+
 
 @media (max-width: 767px){
 .navbar-nav{
